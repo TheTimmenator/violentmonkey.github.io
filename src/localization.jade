@@ -1,0 +1,26 @@
+extends ./base/base.jade
+
+block title
+  title Localization for Violentmonkey
+
+block content
+  h1 Localization for Violentmonkey
+  section#nex
+    h2 Via PR for NEX
+    ol
+      li
+        = 'Fork Violentmonkey from '
+        a(href='https://github.com/violentmonkey/violentmonkey') GitHub
+        |.
+      li
+        = 'Copy '
+        code= 'src/_locales/en/messages.yml'
+        = ' into '
+        code= 'src/_locales/<your_locale>/messages.yml'
+        |.
+      li Translate it.
+      li Commit changes.
+      li Send a pull request.
+  section
+    h2 Via a localization platform
+    p Coming soon...
