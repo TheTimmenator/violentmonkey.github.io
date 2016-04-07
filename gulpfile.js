@@ -4,7 +4,10 @@ const less = require('gulp-less');
 const cssnano = require('gulp-cssnano');
 
 gulp.task('build-jade', () => (
-  gulp.src('src/*.jade')
+  gulp.src([
+    'src/**/*.jade',
+    '!src/_**/*',
+  ])
   .pipe(jade())
   .pipe(gulp.dest('dist'))
 ));
