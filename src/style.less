@@ -10,6 +10,12 @@ body {
   color: #333;
 }
 
+p {
+  &:not(:last-child) {
+    margin-bottom: .5em;
+  }
+}
+
 a {
   color: dodgerblue;
 }
@@ -21,7 +27,7 @@ h2 {
 
 ol,
 ul {
-  padding: .5em 2em;
+  padding: .5em 1.5em;
 }
 
 section {
@@ -45,4 +51,23 @@ footer {
   line-height: 3;
   text-align: center;
   color: #888;
+}
+
+small {
+  margin: 0 .5em;
+  padding: 2px .5em;
+  vertical-align: top;
+  background: #eee;
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 4px .5em;
+  border: 1px solid #9ab;
+  border-radius: 4px;
+  background: #def;
+  &:hover {
+    background: darken(#def, 2%);
+  }
 }

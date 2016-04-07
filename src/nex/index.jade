@@ -1,0 +1,35 @@
+extends ../_base/base.jade
+
+block title
+  title Violentmonkey NEX
+
+block content
+  h1
+    a(href='/') Violentmonkey
+    =' > NEX'
+  section
+    h2 Introduction
+    p Violentmonkey NEX provides userscript support for Chromium-based Opera and Chrome.
+    p
+      a.btn(href='https://github.com/Violentmonkey/violentmonkey') View on GitHub
+
+  section#installation
+    h2 Installation
+    ul
+      li
+        = 'Opera: '
+        img.emoji(title=':point_right:' alt=':point_right:' src='https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png' height=20 width=20 align='absmiddle')
+        a(href='https://addons.opera.com/extensions/details/violent-monkey/') Go
+      li
+        = 'Chrome: '
+        img.emoji(title=':point_right:' alt=':point_right:' src='https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png' height=20 width=20 align='absmiddle')
+        a(href='https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag') Go
+
+  section#changelog
+    h2 Changelog
+    ul
+      li
+        h3 v2.3
+        ul
+          li feat: sync data to Dropbox
+          li feat: sync data to OneDrive
