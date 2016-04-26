@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Violentmonkey home page",
   "scripts": {
-    "build": "gulp build",
-    "dev": "gulp build && gulp watch"
+    "predev": "gulp build",
+    "dev": "gulp watch"
   },
   "repository": {
     "type": "git",

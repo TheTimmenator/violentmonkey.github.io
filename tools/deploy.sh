@@ -1,5 +1,5 @@
 rm -rf dist
-npm run build
+npm run predev
 cd dist
 git init
 git add .
